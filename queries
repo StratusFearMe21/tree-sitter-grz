@@ -7,13 +7,13 @@
 (slide_function
   function: (identifier) @function)
 
-(direction) @keyword.control
-(edge_parser) @keyword.control
-(escape_sequence) @constant.character.escape
+(direction) @keyword.directive
+(edge_parser) @keyword.directive
+(escape_sequence) @string.escape
 (identifier) @variable
 (comment) @comment
-(number_literal) @constant.numeric.integer
-(integer_literal) @constant.numeric.integer
+(number_literal) @number
+(integer_literal) @number
 (string_literal) @string
 (size) @variable.builtin
 
@@ -27,4 +27,3 @@
 ":" @punctuation.delimiter
 ".." @operator
 "..=" @operator
-
